@@ -1,5 +1,3 @@
 #!/usr/bin/env ruby
+puts ARGV[0].scan(/\[from:(.*?)\] \[to:(.*?)\] \[flags:(.*?)\]/).join(",")
 
-# Verify that script contains one argument.
-if ARGV.length != 1
-  puts "Usage: #{$0} <log_entry>"
