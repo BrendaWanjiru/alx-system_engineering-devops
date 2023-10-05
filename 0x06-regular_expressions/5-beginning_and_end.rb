@@ -1,4 +1,2 @@
 #!/usr/bin/env ruby
-# Regular expression matching method
-
-puts ARGV[0].scan(/h.n/).join
+puts ARGV[0].scan(/h[a-zA-Z0-9]n/).join
